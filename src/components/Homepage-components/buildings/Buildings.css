@@ -1,0 +1,136 @@
+.building-section{
+     width: 100%;
+     box-sizing: border-box;
+    background-image: url('./radiatori.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    /* border: 5px solid greenyellow; */
+    padding: 2% 6%; 
+ 
+}
+.buildings{
+    padding: 0% 8%;
+    /* border: 1px solid red; */
+}
+.building-heading{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.building-title{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 1.4em;
+    text-shadow: 0px 0px 20px rgba(0,0,0,1);
+}
+.underline-buildings{
+    content: '';
+    height: 3px;
+    width: 110%;
+    background-color: #ffc107;
+    border: 1px solid black;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: transform 0.3s ease-in-out;
+    /* border: 1px solid pink; */
+    width: 100%;
+}
+.icon-blok{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    /* border: 1px dashed yellow; */
+}
+.icon{
+    color: white;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 3px; 
+    transition: transform 0.3s ease-in-out, color 0.5s ease-in-out; 
+}
+.icon-blok:hover{
+    .icon{
+        color: #ffc107;
+        transform: scale(110%);
+    }
+    .building-name{
+        transform: scale(115%);
+    }
+}
+.building-name{
+    color: white;
+    font-size: 1.1em;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+@media (max-width: 900px){
+    .building-section{
+        padding: 2% 4%;
+    } 
+    .building-heading{
+        margin-bottom: 10px;
+    }
+    .icons{
+        justify-content: space-between;
+    }
+    .icon{  
+        width: 40px;
+        height: 40px;
+    }
+    .building-title{
+        font-size: 1.3em;
+    }
+    .building-name{
+        font-size: .9em;
+    }
+}
+
+@media (max-width: 768px) {
+    .building-section{
+        padding: 2% 0%;
+        /* border: 2px dashed yellow; */
+    }
+    .building-title{
+        font-size: 1.2em;
+    }
+    .underline-buildings{
+        height: 2px;
+        width: 105%;
+    }
+    .icon{
+        width: 30px;
+        height: 30px;
+    }
+    .building-name{
+        font-size: .7em;
+    }
+}
+@media (max-width: 660px) {
+    .icons{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+        align-content:flex-start;
+    }
+    .icon-blok{
+        flex-grow: 1;
+    }
+}
+@media (max-width: 481px) {
+    .building-title{
+        font-size: .9em;
+    }
+    .building-name{
+        font-size: 1em;
+    }
+  }

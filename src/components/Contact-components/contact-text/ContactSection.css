@@ -1,0 +1,93 @@
+.contact-section{
+    padding: 0 5%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.contact-section-heading-box{
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+.contact-heading{
+    width: 36%;
+    /* border: 2px dashed green; */
+}
+.contact-heading h3{
+    color: rgb(59,57,57);
+    font-size: 1.6em;
+    margin: 10px 0;
+}
+.contact-underline{
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #ffc107;
+    border: 1px solid black;
+    margin-right: 8px;
+}
+.contact-heading p{
+    color: rgb(59,57,57);
+    font-size: 1.1em;
+    /* border: 1px solid yellow; */
+}
+.contact-icons-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-icons{
+    font-size: 4em;
+    color: #ffc107;
+    margin-right: 10px;
+}
+.contact-icons-box-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.contact-icons-box-phone button{
+    margin-top: 20px;
+    font-size: 2em;
+    color: black;
+    /* dodan color zbog iphona */
+}
+
+@media (max-width: 1200px) {
+    .contact-section{
+        padding: 0% 3%;
+    }
+    .contact-heading h3{
+        font-size: 1.3em;
+    } 
+  
+  }
+  @media (max-width: 900px) {
+    .contact-heading{
+        width: 38%;
+    }
+    .contact-heading h3{
+        font-size: 1.3em;
+    }
+    .contact-icons-box-phone button{
+        font-size: 1.7em;
+    }
+  }
+  @media (max-width: 768px) {
+    .contact-section{
+        padding: 0% 5%;
+        flex-direction: column;
+    }
+    .contact-heading{
+        width: 100%;
+    }
+    .contact-heading h3{
+        font-size: 1.2em;
+        margin: 5px 0;
+    }
+    .contact-icons-box-phone button{
+        margin-bottom: 10px;
+    }
+  }

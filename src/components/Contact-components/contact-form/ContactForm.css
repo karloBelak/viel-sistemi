@@ -1,0 +1,113 @@
+.contact-form{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;  
+    width: 60%;
+}
+.contact-label{
+    color: rgb(59,57,57);
+    font-size: 1.3em;
+    margin: 10px;
+    /* border: 1px solid red; */
+}
+.required{
+    /* border: 1px solid blue; */
+    font-size: .6em;
+    color: #d1d0d0;
+    margin: 3px 10px;
+}
+.input-field{
+    border: 0;
+    background-color: rgb(231, 231, 231);
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 1.1em;
+}
+.message-field{
+    font-size: 1.4em;
+    height: 150px;
+    padding: 20px;
+}
+.btn-thx-message-box{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.btn-thx-message-box p{
+    margin-right: 20px;
+}
+.back-thx-message {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  .show {
+    opacity: 1;
+  }
+  .none {
+    opacity: 0;
+  }
+.send-btn{
+    margin-left: auto;
+    width: 20%;
+    font-size: 1.2em;
+    padding: 5px 15px;
+    background-color: #ffc107;
+    border: 3px solid #ffc107;
+    border-radius: 20px;
+    transition: .2s ease-in-out;
+    color: black;
+    /* dodan color zbog iphona */
+    }
+.send-btn:hover{
+    border: 3px solid black;
+    box-shadow: 0px 0px 14px 1px rgba(255,193,3,1);
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .contact-form{
+        width: 57%;
+    }
+    .contact-label{
+        font-size: 1.2em;
+    }
+    .input-field{
+        font-size: 1em;
+    }
+    .message-field{
+        font-size: 1.4em;
+    }
+    .send-btn{
+        width: 35%;
+        font-size: 1.3em;
+        padding: 6px 15px;
+        }
+  }
+  @media (max-width: 768px) {
+    .contact-form{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .contact-label{
+        font-size: 1.3em;
+    }
+    .input-field{
+        font-size: 1.1em;
+    }
+    .message-field{
+        font-size: 1.4em;
+    }
+  }
+  @media (max-width: 481px) {
+    .send-btn{
+        width: 35%;
+        font-size: 1.2em;
+        padding: 8px 25px;
+        }
+    .contact-label{
+        font-size: 1.3em;
+    }
+    .btn-thx-message-box{
+        margin-top: 8px;
+    }
+  }

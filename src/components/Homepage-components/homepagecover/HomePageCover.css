@@ -1,0 +1,31 @@
+.mainPageCover{
+    position: relative;
+   /* border: 1px solid red; */
+   margin-bottom: 50px;
+}
+.background-cover{
+    width: 100%;
+    aspect-ratio: 4.5 / 1;
+    filter:contrast(100%);
+    /* border-bottom: 3px solid rgb(70,70,70); */
+}
+@media (max-width: 1200px) {
+    .mainPageCover{
+        margin-bottom: 40px;
+     }
+}
+@media (max-width: 900px) {
+    .mainPageCover{
+        margin-bottom: 30px;
+     }
+}
+@media (max-width: 768px) {
+    .mainPageCover{
+        margin-bottom: 25px;
+     }
+}
+@media (max-width: 481px) {
+    .mainPageCover{
+       margin-bottom: 5px;
+    }
+}

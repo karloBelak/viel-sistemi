@@ -1,0 +1,101 @@
+.main-thing-section{
+    width: 100%;
+    margin: 30px 0;
+}
+.main-thing-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.mainThing-cover-box-text{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.mainThing-cover-text{
+    font-size: 1.2em;
+    /* border: 1px solid red; */
+    color: rgb(59,57,57);
+    width: 66%; 
+    margin-right: 20px;
+}
+.contact-btn{
+    width: 18%;
+    border: 0;
+    border-radius: 20px ;
+}
+.contact-btn button{
+    width: 100%;
+    font-size: 1.2em;
+    padding: 5px 15px;
+    background-color: #ffc107;
+    border: 3px solid #ffc107;
+    border-radius: 20px;
+    transition: .2s ease-in-out;
+    color: black;
+    /* dodan color zbog iphona */
+}
+.contact-btn button:hover{
+    border: 3px solid black;
+    box-shadow: 0px 0px 14px 1px rgba(255,193,3,1);
+    cursor: pointer;
+}
+@media (max-width: 1200px) {
+    .contact-btn button{
+        font-size: 1.1em;
+    }
+    .contact-btn{
+        width: 20%;
+    }
+}
+@media (max-width: 900px) {
+    .main-thing-section{
+        margin: 20px 0;
+    }
+    .mainThing-cover-text{
+        font-size: 1em;
+        width: 65%;
+    } 
+    .contact-btn button{
+        font-size: 1em;
+    }
+    .contact-btn{
+        width: 20%;
+    }
+}
+@media (max-width: 768px) {
+    .mainThing-cover-box-text{
+        flex-direction: column;
+    }
+    .main-thing-section{
+        margin: 10px 0;
+    }
+    .mainThing-cover-text{
+        /* font-size: 0.9em; */
+        margin: 15px auto;
+        width: 90%;
+    }
+    .contact-btn button{
+        font-size: 1.1em;
+    }
+    .contact-btn{
+        width: 25%;
+    }
+}
+@media (max-width: 481px) {
+    .main-thing-section{
+        margin: 0;
+    }
+    .mainThing-cover-text{
+        font-size: 1em;
+        width: 95%;
+    }
+    .contact-btn button{
+        font-size: 1em;
+    }
+    .contact-btn{
+        width: 30%;
+    }
+}

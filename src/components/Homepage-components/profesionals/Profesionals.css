@@ -1,0 +1,102 @@
+.profesionals-section{
+   margin-top: 50px;
+}
+.profesionals-heading{
+    /* border: 2px dashed gray; */
+    margin-top: 20px;
+    text-align: center;
+}
+.profesionals-heading h3{
+   /* border: 1px solid green; */
+   font-size: 1.4em;
+   color:rgb(59,57,57)
+}
+.reason-box-container{
+    /* border: 1px solid orange; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.reason-box{
+    /* border: 1px solid purple; */
+    width: 20%;
+    margin: 10px;
+}
+.reason-icon-box{
+    display: flex;
+    justify-content: center;
+}
+.f-icon-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(70,70,70);
+    border-radius: 75px;
+    color: #ffc107;
+    border: 5px solid grey;
+    transition: .3s ease-in-out;
+}
+.f-icon-div:hover{
+    border: 5px solid #ffc107;
+    box-shadow: 0px 0px 14px 1px rgba(255,193,3,1);
+    transition: all 0.2s ease-in-out;
+}
+.reason-icon{
+    font-size: 2.6em;
+}
+.reason-text-box{
+    text-align: center;
+}
+.reason-text-box h4{
+    /* border: 1px solid purple; */
+    color: rgb(59,57,57);
+    width: 100%;
+    font-size: 1.1em;
+}
+.reason-text-box p{
+    font-size: .9em;
+    color: rgb(59,57,57);
+}
+@media (max-width: 1200px) {
+    .reason-box-container{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .reason-box{
+        width: 30%;
+        margin: 10px;
+    }
+}
+@media (max-width: 900px) {
+    .profesionals-heading h3{
+        font-size: 1.3em;
+     }
+     .reason-text-box h4{
+        font-size: 1em;
+    }
+   
+}
+   
+@media (max-width: 768px) {
+    .profesionals-heading h3{
+        font-size: 1.2em;
+     }
+     .reason-text-box h4{
+        font-size: .9em;
+    }
+    .reason-box{
+        width: 45%;
+    }
+}
+@media (max-width: 481px) {
+    .profesionals-heading h3{
+        font-size: 1.1em;
+     }
+     .reason-box{
+        width: 80%;
+    }
+  }

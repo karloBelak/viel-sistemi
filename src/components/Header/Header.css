@@ -1,0 +1,150 @@
+.header {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-around;
+  background-color: grey;
+  align-items: center;
+  padding: 15px; 
+}
+.icon-div, .contact-box{
+  display: flex;
+  align-items: center;
+  
+}
+.contact-phone-number, .contact-email{
+  display: flex;
+  align-items: center;
+  /* font-size: 1.2em; */
+  font-size: 18px;
+  border: 0;
+  background-color: transparent;
+  color: black;
+  /* dodan color zbog iphona */
+}
+.contact-phone-number:hover, .contact-email:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.contact-phone-number{
+ margin-right: 30px;
+}
+.header-icons{
+  margin-right: 10px;
+  font-size: 2em;
+  color: #ffc107
+}
+.logo-link{
+  display: flex;
+  align-items: center;
+}
+.logo h3 {
+  font-size: 1.7em;
+  margin: 0;
+  /* color: rgb(70,70,70); */
+  color: white;
+  transition: 0.1s ease-in-out;
+}
+.logo a{
+  text-decoration: none;
+}
+.logo-img{
+  width:  50px;
+  /* border: 1px solid red; */
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 1% 5%;
+    justify-content: space-between;
+  }
+  .logo h3 {
+    font-size: 1.5em;
+  }
+  .header-icons{
+    margin-right: 10px;
+    font-size: 1.6em;
+    color: #ffc107
+  }
+  .icon-div{
+    justify-content: space-around;
+    /* border: 1px solid red; */
+  }
+  .contact-phone-number{
+    margin-right: 12px;
+    font-size: 1.1em;
+  }
+  .contact-email{
+    font-size: 1.1em;
+  }
+  .logo-img{
+    width:  45px;
+    /* border: 1px solid red; */
+  }
+}
+@media (max-width: 900px) {
+  .header {
+    padding: 1% 4%;
+    justify-content: space-between;
+  }
+  .logo h3 {
+    font-size: 1.5em;
+  }
+  .header-icons{
+    margin-right: 10px;
+    font-size: 1.6em;
+    color: #ffc107
+  }
+  /* .icon-div{
+    justify-content: space-evenly;
+  } */
+  .contact-phone-number{
+    margin-right: 10px;
+    font-size: 1em;
+  }
+  .contact-email{
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1% 5%;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .header-icons{
+    margin-right: 10px;
+    font-size: 1.4em;
+    color: #ffc107
+  }
+  .contact-phone-number{
+    margin-right: 15px;
+    font-size: 1em;
+  }
+  .contact-email{
+    font-size: 1em;
+  }
+  .contact-box{
+    margin-top: 6px;
+    margin-bottom: 6px;
+    justify-content: space-around;
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+}
+
+@media (max-width: 481px) {
+  .header {
+    padding: 3% 5%;
+  }
+  .logo h3 {
+    font-size: 1.4em;
+  }
+  .icon-div{
+    flex-direction: column;
+    align-items: start;
+  }
+  /* .contact-phone-number, .contact-email{
+    font-size: 1em;
+  } */
+}

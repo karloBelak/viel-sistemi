@@ -1,0 +1,79 @@
+.cooperants-section{
+    /* border: 1px solid red; */
+    padding: 2% 6%;
+}
+.cooperants-heading{
+    color:rgb(70, 70, 70);
+    font-size: 1.4em;
+}
+.cooperant-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cooperants-box{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.cooperant-image{
+    max-width: 150px;
+    /* border: 1px solid red; */
+    margin: 5px;
+}
+.cooperant-name{
+    font-size: 1.3em;
+    color:rgb(70, 70, 70);
+}
+
+@media (max-width: 900px) {
+    .cooperant-image{
+        max-width: 125px;
+    }
+}
+@media (max-width: 768px) {
+    .cooperants-section{
+        padding: 2% 2%;
+    }
+    .cooperants-heading{
+        font-size: 1.3em;
+    }
+    .cooperant-image{
+        max-width: 100px;
+    }
+    .cooperant-name{
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 600px) {
+    .cooperants-box{
+        /* border: 1px solid blue; */
+        flex-direction: column;
+    }
+    .cooperant-image{
+        margin: 0;
+        max-width: 125px;
+    }
+    .cooperant-name{
+        font-size: 1.2em;
+    }
+    .cooperants-heading{
+        font-size: 1.2em;
+    }
+  }
+  @media (max-width: 481px) {
+    .cooperants-box{
+        /* border: 1px solid blue; */
+        flex-direction: column;
+    }
+    .cooperant-image{
+        max-width: 115px;
+    }
+    .cooperant-name{
+        font-size: 1em;
+    }
+    .cooperants-heading{
+        font-size: 1.1em;
+    }
+  }

@@ -1,0 +1,17 @@
+.wall-box{
+    background-image: url('./wall2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2% 9%;
+    margin-top: 10px;
+}
+.wall-box h4{
+    color: white;
+}
+.wallSvgUp{
+    width: 100%;
+}
+.wallSvgDown{
+    width: 100%;
+}

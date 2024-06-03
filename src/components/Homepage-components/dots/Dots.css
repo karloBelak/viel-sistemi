@@ -1,0 +1,32 @@
+.section-dots{
+    margin-bottom: 6px;
+}
+.first{
+    background: radial-gradient(circle, rgba(70, 70, 70, 0.2) 10%, transparent 11%);
+}
+.second {
+    background: radial-gradient(circle, rgba(70, 70, 70, 0.4) 10%, transparent 11%);
+}
+.third {
+    background: radial-gradient(circle, rgba(70, 70, 70, 0.6) 10%, transparent 11%);
+}
+.dots{
+    background-color: #ffffff;
+    background-size: 2em 2em;
+    height: 32px;
+} 
+@media (max-width: 768px) {
+    .dots {
+        background-color: #ffffff;
+        background-size: 1.8em 1.8em;
+        height: 22px;
+    }
+}
+@media (max-width: 481px) {
+    .dots {
+        background-color: #ffffff;
+        background-size: 1.6em 1.6em;
+        height: 18px;
+    }
+  }
+
